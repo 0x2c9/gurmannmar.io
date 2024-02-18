@@ -10,7 +10,7 @@ const projects: Project[] = [
 	{
 		name: 'better',
 		description: 'Track your weight loss and fitness journey with ease.',
-		url: 'https://bl5-better.pages.dev',
+		url: 'https://better-bl5.pages.dev/',
 	},
 	{
 		name: 'echo',

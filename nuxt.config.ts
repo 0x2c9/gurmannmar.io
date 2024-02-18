@@ -26,6 +26,16 @@ export default defineNuxtConfig({
 		'@/assets/styles.css',
 	],
 	devtools: { enabled: true },
+	fontMetrics: {
+		fonts: [
+			{
+				fallbackName: 'spectral fallback',
+				family: 'spectral',
+				fallbacks: ['Times New Roman', 'serif'],
+			},
+		],
+	},
+	modules: ['@nuxtjs/fontaine'],
 	postcss: {
 		plugins: {
 			tailwindcss: {},
@@ -33,5 +43,8 @@ export default defineNuxtConfig({
 	},
 	typescript: {
 		shim: false, // https://vuejs.org/guide/typescript/overview.html#volar-takeover-mode
+	},
+	experimental: {
+		payloadExtraction: true,
 	},
 })

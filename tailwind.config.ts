@@ -1,4 +1,5 @@
 import type { Config } from 'tailwindcss'
+import { fontFamily } from 'tailwindcss/defaultTheme'
 
 export default {
 	content: [
@@ -16,7 +17,7 @@ export default {
 			'greenish-white': '#fdfffd',
 		},
 		fontFamily: {
-			inter: ['spectral', 'sans-serif'],
+			inter: ['spectral', 'spectral fallback', ...fontFamily.serif],
 		},
 
 		animation: {

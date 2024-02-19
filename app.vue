@@ -1,7 +1,9 @@
 <script setup>
-setTimeout(() => {
-	document.body.classList.remove('animate')
-}, 4000)
+if (import.meta.client) {
+	setTimeout(() => {
+		document.body.classList.remove('animate')
+	}, 4000)
+}
 </script>
 
 <template>

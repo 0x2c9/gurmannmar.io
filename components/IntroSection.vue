@@ -24,7 +24,7 @@ const GURMANN = 'gurmann'.split('')
 				{{ letter }}
 			</span>
 		</h1>
-		<div class="space-y-2">
+		<div class="space-y-4 md:space-y-2">
 			<p class="animate-fade-up text-xl transition-colors" :style="{ animationDelay: '1.1s' }">
 				pushing pixels on the frontend at <BrandedAlturosLink />
 			</p>

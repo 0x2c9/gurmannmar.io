@@ -10,9 +10,9 @@ if (import.meta.client) {
 	<div class="tf-u-looking-at size-full">
 		<div class="noise"></div>
 
-		<div class="fixed inset-6 flex flex-col overflow-hidden rounded-xl border-2 border-green/20 bg-sand">
+		<div class="fixed inset-0 flex flex-col overflow-hidden rounded-xl border-2 border-green/20 bg-sand md:inset-6">
 			<div class="relative size-full">
-				<main class="h-full overflow-y-auto pb-20 pt-12">
+				<main class="h-full overflow-y-auto px-6 pb-20 pt-12 md:px-0">
 					<NuxtPage />
 				</main>
 

@@ -28,7 +28,7 @@ const projects: Project[] = [
 <template>
 	<section id="projects">
 		<h2 class="animate-fade-up text-2xl" :style="{ animationDelay: `1.4s` }">Projects</h2>
-		<div class="mt-6 grid grid-cols-3 gap-x-12 gap-y-8">
+		<div class="mt-6 grid gap-x-12 gap-y-8 md:grid-cols-3">
 			<NuxtLink
 				v-for="(project, index) of projects"
 				:key="project.name"

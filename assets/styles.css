@@ -90,11 +90,11 @@ body.animate .animate-rotate-in {
 
 
 .page-enter-active {
-  @apply transition-opacity duration-75 ease-linear;
+  @apply transition-opacity duration-100 ease-linear;
 }
 
 .page-leave-active {
-  @apply transition-opacity duration-75 ease-linear;
+  @apply transition-opacity duration-100 ease-linear;
 }
 
 .page-enter-from,

@@ -1,10 +1,22 @@
+<script setup>
+setTimeout(() => {
+	document.body.classList.remove('animate')
+}, 4000)
+</script>
+
 <template>
 	<div class="tf-u-looking-at size-full">
 		<div class="noise"></div>
 
-		<main class="fixed inset-6 flex flex-col rounded-xl border-2 border-green/20 bg-sand">
-			<NuxtPage />
-		</main>
+		<div class="fixed inset-6 flex flex-col overflow-hidden rounded-xl border-2 border-green/20 bg-sand">
+			<div class="relative size-full">
+				<main class="h-full overflow-y-auto pb-20 pt-12">
+					<NuxtPage />
+				</main>
+
+				<div class="absolute inset-x-0 bottom-0 h-20 bg-gradient-to-t from-sand"></div>
+			</div>
+		</div>
 	</div>
 </template>
 

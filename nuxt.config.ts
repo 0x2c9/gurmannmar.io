@@ -4,6 +4,9 @@ export default defineNuxtConfig({
 			htmlAttrs: {
 				lang: 'en',
 			},
+			bodyAttrs: {
+				class: 'animate',
+			},
 			charset: 'utf-8',
 			viewport: 'width=device-width, initial-scale=1',
 			title: 'mario gurmann - frontend developer',
@@ -21,6 +24,16 @@ export default defineNuxtConfig({
 				},
 			],
 		},
+
+		pageTransition: {
+			name: 'page',
+			mode: 'out-in',
+		},
+	},
+	content: {
+		highlight: {
+			theme: 'dark-plus',
+		},
 	},
 	css: [
 		'@/assets/styles.css',
@@ -35,7 +48,7 @@ export default defineNuxtConfig({
 			},
 		],
 	},
-	modules: ['@nuxtjs/fontaine'],
+	modules: ['@nuxtjs/fontaine', '@nuxt/content'],
 	postcss: {
 		plugins: {
 			tailwindcss: {},

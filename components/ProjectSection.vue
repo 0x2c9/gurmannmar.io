@@ -9,14 +9,8 @@ type Project = {
 const projects: Project[] = [
 	{
 		name: 'better',
-		description: 'Track your weight loss and fitness journey with ease.',
+		description: 'mobile pwa to track your weight loss and workout progress.',
 		url: 'https://better-bl5.pages.dev/',
-	},
-	{
-		name: 'echo',
-		description: 'minimalistic note taking app build upon TipTap.',
-		url: 'https://github.com/0x2c9/echo',
-		stale: true,
 	},
 	{
 		name: 'nuxt-fable',
@@ -32,22 +26,22 @@ const projects: Project[] = [
 </script>
 
 <template>
-	<section id="projects" class="">
-		<h2 class="animate-fade-up text-2xl opacity-0" :style="{ animationDelay: `1.4s` }">Projects</h2>
-		<div class="mt-6 flex gap-12">
+	<section id="projects">
+		<h2 class="animate-fade-up text-2xl" :style="{ animationDelay: `1.4s` }">Projects</h2>
+		<div class="mt-6 grid grid-cols-3 gap-x-12 gap-y-8">
 			<NuxtLink
 				v-for="(project, index) of projects"
 				:key="project.name"
-				:style="{ animationDelay: `${1 + ((index + 8) / 10)}s` }"
+				:style="{ animationDelay: `${1 + ((index + 5) / 10)}s` }"
 				:href="project.url"
 				target="_blank"
-				class="inline-block animate-fade-up opacity-0"
+				class="animate-fade-up inline-block transition-colors"
 			>
-				<h2 class="text-xl italic">
+				<h2 class="relative inline-flex text-xl  before:absolute before:bottom-0 before:h-[2px] before:w-full before:origin-left before:scale-x-0 before:transform before:rounded-full before:bg-green before:transition-transform">
 					{{ project.name }}
 				</h2>
 
-				<p class="mt-2 text-sm italic">{{ project.description }}</p>
+				<p class="mt-2 text-lg italic">{{ project.description }}</p>
 			</NuxtLink>
 		</div>
 	</section>
@@ -55,10 +49,14 @@ const projects: Project[] = [
 
 <style scoped>
 section:has(a:hover) a {
-	@apply text-green/50 transition-colors
+	@apply text-green/50
 }
 
 section a:hover {
 	@apply !text-green
+}
+
+section a:hover h2 {
+	@apply before:scale-x-100
 }
 </style>

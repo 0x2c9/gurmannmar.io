@@ -4,13 +4,13 @@ const GURMANN = 'gurmann'.split('')
 </script>
 
 <template>
-	<section id="intro" class="italic">
-		<h1 class="mb-8 text-6xl">
+	<section id="intro" class="">
+		<h1 class="mb-8 text-6xl italic">
 			<span
 				v-for="(letter, index) in MARIO"
 				:key="`${letter}-${index}`"
 				:style="{ animationDelay: `${(index + 2) / 10}s` }"
-				class="inline-block animate-rotate-in opacity-0"
+				class="animate-rotate-in inline-block"
 			>
 				{{ letter }}
 			</span>
@@ -19,19 +19,19 @@ const GURMANN = 'gurmann'.split('')
 				v-for="(letter, index) in GURMANN"
 				:key="`${letter}-${index}`"
 				:style="{ animationDelay: `${(index + 4) / 10}s` }"
-				class="inline-block animate-rotate-in opacity-0"
+				class="animate-rotate-in inline-block"
 			>
 				{{ letter }}
 			</span>
 		</h1>
 		<div class="space-y-2">
-			<p class="translate-y-3 animate-fade-up text-xl opacity-0" :style="{ animationDelay: '1.1s' }">
+			<p class="animate-fade-up text-xl transition-colors" :style="{ animationDelay: '1.1s' }">
 				pushing pixels on the frontend at <BrandedAlturosLink />
 			</p>
-			<p class="translate-y-3 animate-fade-up text-xl opacity-0" :style="{ animationDelay: '1.2s' }">
+			<p class="animate-fade-up text-xl transition-colors" :style="{ animationDelay: '1.2s' }">
 				passionate about creating fast and beautiful web experiences with <BrandedNuxtLink />
 			</p>
-			<p class="translate-y-3 animate-fade-up text-xl opacity-0" :style="{ animationDelay: '1.3s' }">
+			<p class="animate-fade-up text-xl transition-colors" :style="{ animationDelay: '1.3s' }">
 				learning and mastering <BrandedGoLink /> as my prefered backend language
 			</p>
 		</div>
@@ -40,7 +40,7 @@ const GURMANN = 'gurmann'.split('')
 
 <style>
 #intro:has(a:hover) p {
-	@apply text-green/50 transition-colors
+	@apply text-green/50
 }
 
 #intro:has(a:hover) a > svg {

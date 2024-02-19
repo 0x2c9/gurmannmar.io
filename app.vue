@@ -16,7 +16,7 @@ if (import.meta.client) {
 					<NuxtPage />
 				</main>
 
-				<div class="absolute inset-x-0 bottom-0 h-20 bg-gradient-to-t from-sand"></div>
+				<div class="pointer-events-none absolute inset-x-0 bottom-0 h-20 bg-gradient-to-t from-sand"></div>
 			</div>
 		</div>
 	</div>

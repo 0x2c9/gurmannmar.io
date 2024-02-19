@@ -23,3 +23,17 @@
 		</div>
 	</section>
 </template>
+
+<style>
+section:has(a:hover) a {
+	@apply text-green/50
+}
+
+section a:hover {
+	@apply !text-green
+}
+
+section a:hover h2 {
+	@apply before:scale-x-100
+}
+</style>

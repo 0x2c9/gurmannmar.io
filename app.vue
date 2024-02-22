@@ -1,23 +1,33 @@
 <script setup>
 if (import.meta.client) {
 	setTimeout(() => {
-		document.body.classList.remove('animate')
+		// document.body.classList.remove('animate')
 	}, 4000)
 }
 </script>
 
 <template>
 	<div class="tf-u-looking-at size-full">
+		<!-- ╭∩╮(°ʖ͡°)╭∩╮ -->
 		<div class="noise"></div>
-
-		<div class="fixed inset-0 flex flex-col overflow-hidden rounded-xl border-2 border-green/20 bg-sand md:inset-6">
-			<div class="relative size-full">
-				<main class="h-full overflow-y-auto px-6 pb-20 pt-12 md:px-0">
-					<NuxtPage />
-				</main>
-
-				<div class="pointer-events-none absolute inset-x-0 bottom-0 h-20 bg-gradient-to-t from-sand"></div>
+		<div class="absolute left-1/2 top-6 -translate-x-1/2">
+			<div class="logo relative flex size-[56px] items-center justify-center">
+				<div class="ball to-transparent size-[17px] rounded-full bg-gradient-to-b from-green via-green"></div>
+				<div class="absolute inset-x-0 bottom-0 h-[28px] bg-sand/[0.1] backdrop-blur-sm"></div>
 			</div>
+		</div>
+
+		<div class="relative size-full">
+			<main class="flex h-full flex-col overflow-y-auto px-6 pb-20 pt-12 md:px-0">
+				<NuxtPage />
+			</main>
+
+			<nav class="absolute bottom-8 left-1/2 z-50 flex -translate-x-1/2 space-x-12 text-xl font-medium italic text-orange">
+				<NuxtLink to="/">/ home</NuxtLink>
+				<!-- <NuxtLink to="#">/ projects</NuxtLink> -->
+				<NuxtLink to="/blog">/ blog</NuxtLink>
+			</nav>
+			<div class="pointer-events-none absolute inset-x-0 bottom-0 h-20 bg-gradient-to-t from-sand"></div>
 		</div>
 	</div>
 </template>

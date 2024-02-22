@@ -9,19 +9,16 @@ export default {
 		'./pages/**/*.vue',
 		'./app.vue',
 		'./error.vue',
+		'./nuxt.config.ts',
 	],
 	theme: {
 		colors: {
-			'green': '#143730',
-			'sand': '#F8F4EE',
-			'white': '#ffffff',
-			'greenish-white': '#fdfffd',
-			'd-black': '#100F0F',
-			'd-white': '#FFFCF0',
-			'd-green': '#24837B',
+			green: '#4F54DD',
+			sand: '#D8D8D8',
+			orange: '#F6522E',
 		},
 		fontFamily: {
-			inter: ['spectral', 'spectral fallback', ...fontFamily.serif],
+			spectral: ['spectral', 'spectral fallback', ...fontFamily.serif],
 		},
 	},
 	corePlugins: {

@@ -14,6 +14,14 @@
 	font-style: italic
 }
 
+@font-face {
+	font-family: 'spectral';
+	src: url(./fonts/spectral-mediumitalic.woff2) format("woff2");
+	font-display: swap;
+	font-weight: 500;
+	font-style: italic
+}
+
 
 @tailwind base;
 
@@ -29,13 +37,6 @@
     height: 100%;
   }
 
-	body {
-		font-family: 'spectral', serif;
-		color: theme('colors.green');
-		background-color: theme('colors.greenish-white');
-		overflow-x: hidden;
-	}
-
 }
 
 
@@ -48,8 +49,7 @@
 }
 
 ::-webkit-scrollbar-thumb {
-	background-color: theme('colors.green');
-	border-radius: 4px
+	@apply bg-green rounded
 }
 
 ::-webkit-scrollbar-track {
@@ -57,7 +57,7 @@
 }
 
 body.animate .animate-fade-up {
-	animation: fade-up 1s ease forwards;
+	animation: fade-up 1.5s ease forwards;
 	opacity: 0
 }
 
@@ -69,7 +69,7 @@ body.animate .animate-rotate-in {
 @keyframes fade-up {
 	from {
 		opacity: 0;
-		transform: translateY(12px)
+		transform: translateY(16px)
 	}
 	to {
 		opacity: 1;
@@ -80,7 +80,7 @@ body.animate .animate-rotate-in {
 @keyframes rotate-in {
 	from {
 		opacity: 0;
-		transform: translateY(10px) rotate(4deg)
+		transform: translateY(12px) rotate(2deg)
 	}
 	to {
 		opacity: 1;

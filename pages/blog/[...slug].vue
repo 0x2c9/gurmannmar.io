@@ -2,6 +2,13 @@
 function scrollToTop() {
 	window.scrollTo({ top: 0, behavior: 'smooth' })
 }
+
+definePageMeta({
+	pageTransition: {
+		name: 'slow-fade',
+		mode: 'out-in',
+	},
+})
 </script>
 
 <template>

@@ -101,3 +101,16 @@ body.animate .animate-rotate-in {
 .page-leave-to {
   opacity: 0;
 }
+
+.slow-fade-enter-active {
+  @apply transition-opacity duration-500 ease-linear;
+}
+
+.slow-fade-leave-active {
+  @apply transition-opacity duration-200 ease-linear;
+}
+
+.slow-fade-enter-from,
+.slow-fade-leave-to {
+  opacity: 0;
+}

@@ -2,7 +2,7 @@
 id: "1"
 title: "Something New"
 description: "After years of wanting write a blog, I'm finally doing it."
-date: "2024-02-22"
+date: "2024-02-29"
 ---
 
 # One morning, when Gregor Samsa woke from troubled dreams.
@@ -18,39 +18,6 @@ It showed a lady fitted out with a fur hat and fur boa who sat upright, raising 
 - He has to get up early (to start another dreadful day).
 - He has a drawer and a alarm clock next to his bed.
 - His mother calls him when he gets up to late.
-
-<table class="data">
-  <tr>
-    <th>Writer</th>
-    <th>Nationality</th>
-    <th>Genre</th>
-    <th>Most famous book</th>
-  </tr>
-  <tr>
-    <td>Franz Kafka</td>
-    <td>Leo Tolstoy</td>
-    <td>F. Scott Fitzgerald</td>
-    <td>H.G. Wells</td>
-  </tr>
-  <tr>
-    <td>Austrian</td>
-    <td>Russia</td>
-    <td>American</td>
-    <td>British</td>
-  </tr>
-  <tr>
-    <td>Literature & Fiction, Philosophy, Short Stories</td>
-    <td>Literature & Fiction, Philosophy</td>
-    <td>Literature & Fiction, Short Stories</td>
-    <td>Science Fiction</td>
-  </tr>
-    <tr>
-    <td>The Metamorphosis</td>
-    <td>War & Piece</td>
-    <td>The Great Gatsby</td>
-    <td>War of the Worlds</td>
-  </tr>
-  </table>
 
 First he wanted to stand up quietly and undisturbed, get dressed, above all have breakfast, and only then consider further action, for (he noticed this clearly) by thinking things over in bed he would not reach a reasonable conclusion. He remembered that he had already often felt a light pain or other in bed, perhaps the result of an awkward lying position, which later turned out to be purely imaginary when he stood up, and he was eager to see how his present fantasies would gradually dissipate. That the change in his voice was nothing other than the onset of a real chill, an occupational illness of commercial travelers, of that he had not the slightest doubt.
 

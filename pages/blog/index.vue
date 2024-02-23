@@ -2,11 +2,21 @@
 import type { QueryBuilderParams } from '@nuxt/content/dist/runtime/types'
 
 const query: QueryBuilderParams = { path: '/blog', sort: [{ date: -1 }] }
+
+function formatDate(date: string) {
+	const options: Intl.DateTimeFormatOptions = {
+		year: 'numeric',
+		month: 'short',
+		day: 'numeric',
+	}
+
+	return new Date(date).toLocaleDateString('en', options)
+}
 </script>
 
 <template>
 	<article>
-		<section class="mx-auto flex max-w-2xl flex-col space-y-8">
+		<section class="mx-auto flex w-full max-w-2xl flex-col space-y-8">
 			<ContentList
 				v-slot="{ list }"
 				path="/blog"
@@ -19,13 +29,13 @@ const query: QueryBuilderParams = { path: '/blog', sort: [{ date: -1 }] }
 					:style="{ animationDelay: `${((index + 1) / 10)}s` }"
 					class="animate-fade-up transition-colors"
 				>
-					<div class="flex items-end justify-between gap-x-4">
+					<div class="flex flex-col justify-between gap-x-4 md:flex-row md:items-end">
 						<h2 class="relative inline-flex text-2xl font-medium italic">
 							{{ article.title }}
 						</h2>
 						<span class="text-sm"> {{ article.readingTime.text }}</span>
 					</div>
-					<span class="text-sm"> {{ article.dateDisplay }}</span>
+					<span class="text-sm"> {{ formatDate(article.date) }}</span>
 				</NuxtLink>
 			</ContentList>
 		</section>

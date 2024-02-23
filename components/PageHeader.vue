@@ -3,7 +3,7 @@
 </script>
 
 <template>
-	<header class="fixed inset-x-0 mx-auto w-full max-w-2xl bg-sand pt-6">
+	<header class="fixed inset-x-0 mx-auto w-full max-w-2xl bg-sand pl-4 pr-6 pt-6 md:px-0">
 		<nav
 			class=" flex items-center justify-between text-xl font-medium italic	text-blue"
 			style="animation-delay: 0.4s;"

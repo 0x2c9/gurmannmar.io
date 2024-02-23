@@ -35,7 +35,7 @@ export default defineNuxtConfig({
 			remarkPlugins: ['remark-reading-time'],
 		},
 		highlight: {
-			theme: 'dark-plus',
+			theme: 'nord',
 		},
 	},
 	css: [

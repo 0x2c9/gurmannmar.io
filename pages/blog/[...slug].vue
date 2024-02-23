@@ -21,11 +21,19 @@ definePageMeta({
 		w-full
 		max-w-2xl
 		prose-headings:scroll-mt-24
+		prose-headings:text-darker-blue
 		prose-h1:text-4xl
 		prose-h2:text-3xl
 		prose-h3:text-2xl
 		prose-h4:text-xl
+		prose-p:text-dark-blue
 		prose-a:break-words
+		prose-a:text-darker-blue
+		prose-blockquote:border-l-blue
+		prose-strong:text-dark-blue
+		prose-li:text-dark-blue
+		prose-li:marker:text-dark-blue
+		prose-hr:border-darker-blue
 	"
 	>
 		<ContentDoc />

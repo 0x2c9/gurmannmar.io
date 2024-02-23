@@ -13,9 +13,11 @@ export default {
 	],
 	theme: {
 		colors: {
-			blue: '#494dcb',
-			sand: '#D8D8D8',
-			orange: '#F6522E',
+			'blue': '#494dcb',
+			'dark-blue': '#191b58',
+			'darker-blue': '#00023b',
+			'sand': '#D8D8D8',
+			'orange': '#F6522E',
 		},
 		fontFamily: {
 			spectral: ['spectral', 'spectral fallback', ...fontFamily.serif],

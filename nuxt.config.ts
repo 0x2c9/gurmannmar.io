@@ -50,11 +50,19 @@ export default defineNuxtConfig({
 			},
 		],
 	},
-	modules: ['@nuxtjs/fontaine', '@nuxt/content'],
+	modules: ['@nuxtjs/fontaine', '@nuxt/content', '@nuxtjs/sitemap'],
 	postcss: {
 		plugins: {
 			tailwindcss: {},
 		},
+	},
+	site: {
+		url: 'https://gurmannmar.io',
+	},
+	sitemap: {
+		sources: [
+			'/api/sitemap/urls',
+		],
 	},
 	runtimeConfig: {
 		public: {

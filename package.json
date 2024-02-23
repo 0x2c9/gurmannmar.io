@@ -21,6 +21,7 @@
 		"@antfu/eslint-config": "^2.6.4",
 		"@eslint/eslintrc": "^3.0.1",
 		"@nuxtjs/fontaine": "^0.4.1",
+		"@nuxtjs/sitemap": "^5.1.0",
 		"@tailwindcss/typography": "^0.5.10",
 		"eslint": "^8.56.0",
 		"eslint-plugin-tailwindcss": "^3.14.2",

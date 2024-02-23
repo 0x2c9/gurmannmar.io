@@ -3,6 +3,7 @@ id: "1"
 title: "Something New"
 description: "After years of wanting write a blog, I'm finally doing it."
 date: "2024-02-29"
+lastModified: "2024-02-29"
 ---
 
 # One morning, when Gregor Samsa woke from troubled dreams.

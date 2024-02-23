@@ -5,12 +5,12 @@
 <template>
 	<header class="fixed inset-x-0 mx-auto w-full max-w-2xl bg-sand pt-6">
 		<nav
-			class=" flex items-center justify-between text-xl font-medium italic	text-green"
+			class=" flex items-center justify-between text-xl font-medium italic	text-blue"
 			style="animation-delay: 0.4s;"
 		>
 			<NuxtLink to="/">
 				<div class="logo animate-fade-in relative flex size-10 items-center justify-center">
-					<div class="ball to-transparent size-5 rounded-full bg-gradient-to-b from-green via-green"></div>
+					<div class="ball to-transparent size-5 rounded-full bg-gradient-to-b from-blue via-blue"></div>
 					<div class="absolute inset-x-0 bottom-0 h-5 bg-sand/0 backdrop-blur-sm"></div>
 				</div>
 			</NuxtLink>

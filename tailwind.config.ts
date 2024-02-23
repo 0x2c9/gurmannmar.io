@@ -13,7 +13,7 @@ export default {
 	],
 	theme: {
 		colors: {
-			green: '#4F54DD',
+			blue: '#494dcb',
 			sand: '#D8D8D8',
 			orange: '#F6522E',
 		},

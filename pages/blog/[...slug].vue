@@ -22,7 +22,7 @@ function scrollToTop() {
 	>
 		<ContentDoc />
 
-		<button class="fixed bottom-6 right-6 z-50 rounded-full p-2 text-green hover:bg-green/20" @click="scrollToTop">
+		<button class="fixed bottom-6 right-6 z-50 rounded-full p-2 text-blue hover:bg-blue/20" @click="scrollToTop">
 			<svg
 				viewBox="0 0 24 24"
 				display="inline-block"

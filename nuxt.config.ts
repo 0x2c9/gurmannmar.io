@@ -5,22 +5,22 @@ export default defineNuxtConfig({
 				lang: 'en',
 			},
 			bodyAttrs: {
-				class: 'animate font-spectral overflow-x-hidden bg-sand text-green antialiased',
+				class: 'animate font-spectral overflow-x-hidden bg-sand text-blue antialiased',
 			},
 			charset: 'utf-8',
 			viewport: 'width=device-width, initial-scale=1',
-			title: 'mario gurmann - frontend developer',
+			title: 'mario gurmann',
 			meta: [
 				{
 					name: 'description',
-					content: 'mario gurmann - frontend developer',
+					content: 'mario gurmann',
 				},
 			],
 			link: [
 				{
 					rel: 'icon',
 					type: 'image/svg+xml',
-					href: './favicon.svg',
+					href: '/favicon.svg',
 				},
 			],
 		},

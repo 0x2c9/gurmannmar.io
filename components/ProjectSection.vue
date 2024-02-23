@@ -37,7 +37,7 @@ const projects: Project[] = [
 				target="_blank"
 				class="animate-fade-up inline-block transition-colors"
 			>
-				<h2 class="relative inline-flex text-xl before:absolute before:bottom-0 before:h-[2px] before:w-full before:origin-left before:scale-x-0 before:transform before:rounded-full before:bg-green before:transition-transform">
+				<h2 class="relative inline-flex text-xl before:absolute before:bottom-0 before:h-[2px] before:w-full before:origin-left before:scale-x-0 before:transform before:rounded-full before:bg-blue before:transition-transform">
 					{{ project.name }}
 				</h2>
 
@@ -49,11 +49,11 @@ const projects: Project[] = [
 
 <style scoped>
 section:has(a:hover) a {
-	@apply text-green/50
+	@apply text-blue/50
 }
 
 section a:hover {
-	@apply !text-green
+	@apply !text-blue
 }
 
 section a:hover h2 {

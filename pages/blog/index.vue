@@ -16,7 +16,7 @@ function formatDate(date: string) {
 
 <template>
 	<article>
-		<section class="mx-auto flex w-full max-w-2xl flex-col space-y-8">
+		<section class="mx-auto flex w-full max-w-2xl flex-col">
 			<ContentList
 				v-slot="{ list }"
 				path="/blog"
@@ -27,7 +27,7 @@ function formatDate(date: string) {
 					:key="article._path"
 					:to="article._path"
 					:style="{ animationDelay: `${((index + 1) / 10)}s` }"
-					class="animate-fade-up transition-colors"
+					class="animate-fade-up py-6 transition-colors"
 				>
 					<div class="flex flex-col justify-between gap-x-4 md:flex-row md:items-end">
 						<h2 class="relative inline-flex text-2xl font-medium italic">
@@ -41,3 +41,13 @@ function formatDate(date: string) {
 		</section>
 	</article>
 </template>
+
+<style scoped>
+section:has(a:hover) a {
+	@apply text-blue/50
+}
+
+section a:hover {
+	@apply !text-blue
+}
+</style>

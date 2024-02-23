@@ -16,10 +16,28 @@
 			</NuxtLink>
 
 			<div class="flex gap-x-12">
-				<NuxtLink to="/">/ home</NuxtLink>
-				<NuxtLink to="/blog">/ blog</NuxtLink>
+				<NuxtLink to="/"><span>/</span> home</NuxtLink>
+				<NuxtLink to="/projects"><span>/</span> projects</NuxtLink>
+				<NuxtLink to="/blog"><span>/</span> blog</NuxtLink>
 			</div>
 		</nav>
 	</header>
 	<div class="pointer-events-none fixed inset-x-0 top-16 h-12 bg-gradient-to-b from-sand"></div>
 </template>
+
+<style scoped>
+@keyframes ping {
+	0% {
+		opacity: 1;
+	}
+	50% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+a.router-link-active span{
+	animation: ping 1.5s linear infinite;
+}
+</style>

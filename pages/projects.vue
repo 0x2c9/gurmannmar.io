@@ -26,25 +26,24 @@ const projects: Project[] = [
 </script>
 
 <template>
-	<section id="projects">
-		<h2 class="animate-fade-up text-2xl" :style="{ animationDelay: `1.4s` }">Projects</h2>
-		<div class="mt-6 grid gap-x-12 gap-y-8 md:grid-cols-3">
+	<article class="mx-auto flex w-full max-w-2xl ">
+		<section class="-mx-12 mt-6 grid md:grid-cols-2">
 			<NuxtLink
 				v-for="(project, index) of projects"
 				:key="project.name"
-				:style="{ animationDelay: `${1 + ((index + 5) / 10)}s` }"
+				:style="{ animationDelay: `${((index + 1) / 10)}s` }"
 				:href="project.url"
 				target="_blank"
-				class="animate-fade-up inline-block transition-colors"
+				class="animate-fade-up inline-block p-12"
 			>
-				<h2 class="relative inline-flex text-xl before:absolute before:bottom-0 before:h-[2px] before:w-full before:origin-left before:scale-x-0 before:transform before:rounded-full before:bg-blue before:transition-transform">
+				<h2 class="text-xl font-medium italic">
 					{{ project.name }}
 				</h2>
 
-				<p class="mt-2 text-lg italic">{{ project.description }}</p>
+				<p class="mt-2 text-lg">{{ project.description }}</p>
 			</NuxtLink>
-		</div>
-	</section>
+		</section>
+	</article>
 </template>
 
 <style scoped>
@@ -54,9 +53,5 @@ section:has(a:hover) a {
 
 section a:hover {
 	@apply !text-blue
-}
-
-section a:hover h2 {
-	@apply before:scale-x-100
 }
 </style>

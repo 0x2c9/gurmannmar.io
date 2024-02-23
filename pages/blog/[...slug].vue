@@ -23,7 +23,11 @@ function scrollToTop() {
 	>
 		<ContentDoc />
 
-		<button class="fixed bottom-4 right-4 z-50 rounded-full p-2 text-blue hover:bg-blue/20 md:bottom-6 md:right-6" @click="scrollToTop">
+		<button
+			class="fixed bottom-4 right-4 z-50 rounded-full p-2 text-blue hover:bg-blue/20 md:bottom-6 md:right-6"
+			aria-label="Back to top"
+			@click="scrollToTop"
+		>
 			<svg
 				viewBox="0 0 24 24"
 				display="inline-block"

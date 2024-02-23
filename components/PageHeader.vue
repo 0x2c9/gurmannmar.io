@@ -8,7 +8,7 @@
 			class=" flex items-center justify-between text-xl font-medium italic	text-blue"
 			style="animation-delay: 0.4s;"
 		>
-			<NuxtLink to="/">
+			<NuxtLink to="/" aria-label="Back to homepage">
 				<div class="logo animate-fade-in relative flex size-10 items-center justify-center">
 					<div class="ball to-transparent size-5 rounded-full bg-gradient-to-b from-blue via-blue"></div>
 					<div class="absolute inset-x-0 bottom-0 h-5 bg-sand/0 backdrop-blur-sm"></div>

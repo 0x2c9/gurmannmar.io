@@ -16,11 +16,13 @@ export default {
 			'blue': '#494dcb',
 			'dark-blue': '#191b58',
 			'darker-blue': '#00023b',
-			'sand': '#D8D8D8',
 			'orange': '#F6522E',
+			'black': '#1C1818',
+			'white': '#D8D8D8'
 		},
 		fontFamily: {
 			spectral: ['spectral', 'spectral fallback', ...fontFamily.serif],
+			nkv: ['nkv', 'nkv fallback', ...fontFamily.sans],
 		},
 	},
 	corePlugins: {

@@ -5,11 +5,11 @@ export default defineNuxtConfig({
 				lang: 'en',
 			},
 			bodyAttrs: {
-				class: 'animate font-spectral overflow-x-hidden bg-sand text-blue antialiased',
+				class: 'animate font-spectral overflow-x-hidden bg-white text-black antialiased',
 			},
 			charset: 'utf-8',
 			viewport: 'width=device-width, initial-scale=1',
-			title: 'mario gurmann',
+			title: 'mario gurmann - frontend developer',
 			meta: [
 				{
 					name: 'description',
@@ -70,9 +70,6 @@ export default defineNuxtConfig({
 		},
 	},
 	typescript: {
-		shim: false, // https://vuejs.org/guide/typescript/overview.html#volar-takeover-mode
-	},
-	experimental: {
-		payloadExtraction: true,
+		strict: true,
 	},
 })

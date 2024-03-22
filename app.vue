@@ -6,12 +6,10 @@ if (import.meta.client) {
 
 <template>
 	<div class="tf-u-looking-at size-full">
-		<PageHeader />
-
-		<main class="flex min-h-full flex-col px-6 py-28 md:px-0">
+		<main class="flex min-h-full flex-col px-6 py-12 xl:px-0 xl:py-28">
 			<NuxtPage />
 		</main>
 
-		<div class="pointer-events-none fixed inset-x-0 bottom-0 hidden h-20 bg-gradient-to-t from-sand md:block"></div>
+		<div class="pointer-events-none fixed inset-x-0 bottom-0 hidden h-20 bg-gradient-to-t from-white md:block"></div>
 	</div>
 </template>

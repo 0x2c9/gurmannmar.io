@@ -92,7 +92,7 @@ function formatDate(date: string) {
 					:to="article._path"
 
 					class="py-4 transition-colors xl:py-6"
-					:class="{ 'pt-0': index === 0 }"
+					:class="{ '!pt-0': index === 0 }"
 				>
 					<div class="flex flex-col justify-between gap-x-4 xl:flex-row xl:items-end">
 						<h2 class="relative inline-flex font-bold xl:text-2xl">
